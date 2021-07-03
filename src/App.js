@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/Home/Home";
+import ParticlesBg from "particles-bg";
+
+import "./app.css";
+import About from "./components/About/About";
+import MySkill from "./components/MySkill/MySkill";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Services from "./components/Service/Services";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home></Home>
+      <ParticlesBg type="lines" bg={true} />
+      <About></About>
+      <MySkill></MySkill>
+      <Portfolio></Portfolio>
+      <Services></Services>
+      <Contact></Contact>
+      <p className="text-center mt-5 fs-5">
+        All Rights © Reserved by Hasanur rahman himel
+      </p>
+    </>
   );
 }
 
